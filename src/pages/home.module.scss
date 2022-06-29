@@ -7,10 +7,54 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 768px){
+    .hero {
+      padding-top: 1rem;
+      h1{
+       font-size: 3.5rem;
+      }
+      button {
+        width: 50%;
+        height: 3rem;
+      }
+    }
+  }
+  @media (max-width: 600px){
+    .hero {
+      padding-top: 2rem;
+      h1{
+       font-size: 2.5rem;
+      }
+      button {
+        width: 50%;
+        height: 3rem;
+        font-size: 1rem;
+      }
+    }
+  }
+  @media (max-width: 550px) {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin: auto;
+    padding-top: 20rem;
+    .hero{
+      padding-top: 20rem;
+      display: inline;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      grid-row: 2;
+      h1 {
+        font-size: 3rem;
+      }
+      button {
+        margin: 2rem auto;
+      }
+    }
+  }
 }
 .hero {
   max-width: 600px;
-
   > span {
     font-size: 1.5rem;
     font-weight: bold;

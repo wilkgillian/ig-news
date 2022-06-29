@@ -30,4 +30,12 @@
   &:hover {
     filter: brightness(0.8);
   }
+  @media (max-width: 320px) {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    svg.closeIcon{
+      display: none;
+    }
+  }
 }
